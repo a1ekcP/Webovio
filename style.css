@@ -32,8 +32,7 @@ ul, li, ul{
     overflow: hidden;
 }
 .__container{
-    max-width: 1110px;
-    box-sizing: content-box;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -81,6 +80,9 @@ ul, li, ul{
     color: #FFFFFF;
     display: inline-block;
 }
+.header__link:hover{
+    color: #FFD723;
+}
 
 
 
@@ -107,7 +109,7 @@ label{
 /*--------------menu-------------*/
 
 
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     label{
         display: block;
         top: 50%;
@@ -137,10 +139,10 @@ label{
     }
     .header__burger ul{
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
     }
     .header__link{
-        font-size: 25px;
+        font-size: 20px;
     }
     #check-menu:checked ~ .header__burger{
             position: absolute;
@@ -154,7 +156,15 @@ label{
         background-size: cover;
     }
 }
-
+@media (max-width: 900px){
+    .header__wrap{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header__list{
+        justify-content: space-between;
+    }
+}
 
 /*-------PAGE-----*/
 .suptitle{
@@ -186,7 +196,8 @@ label{
 .main__wrap{
     display: flex;
     flex-direction: column;
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
     position: relative;
     z-index: 2;
 }
@@ -213,4 +224,58 @@ label{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 599px){
+    .main__wrap {
+        padding-top: 124px;
+        padding-bottom: 100px;
+    }
+}
+
+/*-----COMPANY--------*/
+.company{
+    position: relative;
+    margin-top: -90px;
+    width: 100%;
+}
+.company__wrap{
+    display: flex;
+    padding: 60px 65px;
+    background: #FFFFFF;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 2px;
+   
+}
+.company__item{
+    display: block;
+}
+.company__item:not(:last-child){
+    margin-right: 66px;
+}
+.company__item img{
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 900px){
+    .company__wrap{
+        padding: 40px 30px;
+    }
+}
+@media (max-width: 767.98px){
+    .company__wrap{
+        padding: 30px 15px;
+    }
+    .company__item:not(:last-child){
+        margin-right: 20px;
+    }
+}
+@media (max-width: 532.98px){
+    .company{
+        margin-top: -60px;
+    }
+    .main__title {
+        font-size: 60px;
+        line-height: 70px;
+    }
 }
