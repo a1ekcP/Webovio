@@ -512,6 +512,7 @@ label{
 .balenciaga{
     max-width: 1440px;
     
+   
     margin: 0 auto;
 }
 .balenciaga__wrap{
@@ -519,11 +520,16 @@ label{
     text-align: center;
     display: flex;
     gap: 96px;
+    margin-bottom: 165px;
 }
 
 .balenciaga__img{
     position: relative;
-    margin-bottom: 165px;
+    flex: 0 1 79%;
+}
+.balenciaga__img img{
+    width: 100%;
+    height: auto;
 }
 .caption{
     position: absolute;
@@ -570,13 +576,14 @@ label{
 }
 
 .balenciaga_caption{
-    bottom: -68px;
-    right: -43px;
+    bottom: -35px;
+    right: -40px;
 }
 
 .balenciaga__describe{
     text-align: start;
     padding: 90px 45px 70px 0;
+    flex: 0 1 50%;
 }
 .describe__title{
     margin-bottom: 24px;
@@ -587,4 +594,37 @@ label{
 .describe__link{
     display: inline-block;
     margin-top: 90px;
+}
+
+
+@media only screen and (max-width : 1200px){
+    .balenciaga__describe {
+        padding: 40px 45px 70px 0;
+    }
+    .describe__link {
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width : 980px){
+    .balenciaga_caption{
+        position: unset;
+    }
+}
+@media only screen and (max-width : 893px){
+    .balenciaga__wrap {
+        gap: 66px;
+    }
+}
+@media only screen and (max-width : 700px){
+    .balenciaga__wrap {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .balenciaga_caption {
+        max-width: 100%;
+        box-shadow: 32px 30px 156px rgb(0 0 0 / 15%);
+    }
+    .balenciaga__describe {
+        padding: 40px 45px 15px 15px;
+    }
 }
