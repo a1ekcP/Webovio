@@ -510,12 +510,81 @@ label{
 
 /*-----BALENCIAGA--------*/
 .balenciaga{
-    margin-bottom: 165px;
+    max-width: 1440px;
+    
+    margin: 0 auto;
 }
 .balenciaga__wrap{
-    max-width: 1440px;
-    margin: 0 auto;
-    border: 1px solid black;
+    max-width: 1306px;
     text-align: center;
     display: flex;
+    gap: 96px;
+}
+
+.balenciaga__img{
+    position: relative;
+    margin-bottom: 165px;
+}
+.caption{
+    position: absolute;
+    max-width: 453px;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 8px;
+    text-align: start;
+}
+.caption__text{
+    font-style: italic;
+    line-height: 26px;
+    color: #4D533C;
+    margin-bottom: 24px;
+}
+.caption__autor{
+    display: flex;
+    align-items: center;
+}
+.caption__autor_icon{
+    border-radius: 100%;
+    max-width: 46px;
+    max-height: 46px;
+    
+    box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+    margin-right: 14px;
+}
+.caption__autor_icon img{
+    width: 100%;
+    height: auto;
+}
+.autor__name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4D533C;
+    margin-bottom: 4px;
+}
+.autor__post{
+    font-size: 14px;
+    line-height: 21px;
+    color: #152934;
+}
+
+.balenciaga_caption{
+    bottom: -68px;
+    right: -43px;
+}
+
+.balenciaga__describe{
+    text-align: start;
+    padding: 90px 45px 70px 0;
+}
+.describe__title{
+    margin-bottom: 24px;
+}
+.describe__text{
+    margin-bottom: 30px;
+}
+.describe__link{
+    display: inline-block;
+    margin-top: 90px;
 }
