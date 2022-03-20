@@ -850,3 +850,28 @@ label{
         flex: 0 1 100%;
     }
 }
+
+
+/*-------------SLOGAN-------------*/
+.slogan{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.slogan_wrap{
+    max-width: 1275px;
+    padding: 70px 164px;
+    background: #FAFAFA;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+}
+.slogan__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+    color: #4D533C;
+    
+    margin-bottom: 50px;
+}
+.slogan__link{
+    text-transform: uppercase;
+}
+    
