@@ -862,16 +862,133 @@ label{
     padding: 70px 164px;
     background: #FAFAFA;
     box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+
+    transform: translateY(190px);
 }
 .slogan__title{
     font-weight: 700;
     font-size: 60px;
     line-height: 74px;
     color: #4D533C;
-    
+
     margin-bottom: 50px;
 }
 .slogan__link{
     text-transform: uppercase;
 }
-    
+
+
+
+/*-----------FOOTER------*/
+.footer{
+    background: url(img/Bg.jpg)no-repeat center;
+    background-size: cover;
+    padding-top: 380px;
+}
+.footer .__container>*:not(:last-child){
+    border-bottom: 1px solid #5D6544;
+}
+
+.footer__contacts{
+    display: flex;
+    gap: 128px;
+    padding-bottom: 52px;
+}
+.phone__title,
+.adress__title{
+    line-height: 40px;
+    color: #B6C197;
+    margin-bottom: 8px;
+}
+.phone__num a,
+.adress__num a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.footer__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 33px;
+    align-items: center;
+}
+.footer__license{
+    font-size: 14px;
+    line-height: 21px;
+    color: #B5C096;
+}
+
+.footer__nav{
+    padding: 60px 0;
+    display: flex;
+}
+/*-------------------*/
+.navigation__title{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+}
+.navigation__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #B6C197;
+    display: inline-block;
+}
+.navigation__link:hover{
+    color: #FFD723;
+}
+/*-------------------*/
+
+.navigation__services,
+.navigation__help,
+.navigation__company,
+.navigation__touch{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation__services{
+    margin-right: 78px;
+}
+.navigation__help{
+    margin-right: 100px;
+}
+.navigation__company{
+    margin-right: 137px;
+}
+.navigation__touch{
+    border-left: 1px solid #5D6544;
+    margin-bottom: 87px;
+    padding-left: 110px;
+}
+.touch__text{
+    line-height: 26px;
+    color: #B6C197;
+    margin-bottom: 23px;
+}
+.touch__email{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.touch__social a{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin-right: 14px;
+}
+.touch__social a:last-child{
+    margin-right: 0;
+}
+.touch__social img{
+    width: 100%;
+    height: auto;
+}
