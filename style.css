@@ -857,7 +857,7 @@ label{
     max-width: 1440px;
     margin: 0 auto;
 }
-.slogan_wrap{
+.slogan__wrap{
     max-width: 1275px;
     padding: 70px 164px;
     background: #FAFAFA;
@@ -877,6 +877,39 @@ label{
     text-transform: uppercase;
 }
 
+
+
+@media only screen and (max-width : 1024px){
+    .slogan__wrap{
+        padding: 70px 56px;
+    }
+}
+@media only screen and (max-width : 900px){
+    .slogan__title{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .slogan__wrap{
+        transform: translateY(0);
+    }
+}
+@media only screen and (max-width : 700px){
+    .slogan__wrap{
+        padding: 50px 15px;
+    }
+}
+@media only screen and (max-width : 700px){
+    .slogan__title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width : 480px){
+    .slogan__title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
 
 
 /*-----------FOOTER------*/
@@ -991,4 +1024,61 @@ label{
 .touch__social img{
     width: 100%;
     height: auto;
+}
+
+
+@media only screen and (max-width : 1200px){
+    .footer__nav{
+        justify-content: space-between;
+    }
+    .footer__nav>*{
+        margin-right: 0;
+    }
+    .navigation__touch{
+        padding-left: 60px;
+    }
+}
+@media only screen and (max-width : 940px){
+    .footer{
+        padding-top: 70px;
+    }
+    .navigation__services,
+    .navigation__help{
+        flex: 0 1 40%;
+    }
+    .navigation__company{
+        flex: 0 1 20%;
+    }
+
+    .navigation__touch{
+        flex: 0 1 100%;
+        border-left: none;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .footer__nav{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width : 600px){
+    .navigation__services,
+    .navigation__help{
+        flex: 0 1 50%;
+        margin-bottom: 20px;
+    }
+    .navigation__company{
+        flex: 0 1 35%;
+    }
+    .navigation__touch{
+        flex: 0 1 65%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .touch__email{
+        font-size: 20px;
+    }
+    .footer__contacts {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
